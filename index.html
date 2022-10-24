@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>To do list</title>
+</head>
+<body>
+
+    <div class="center" id="center">
+        <div class="top-details">
+            <div class="left">
+                <span class="date" id="date">Sunday June 1</span>
+                <br>
+                <!-- <span class="active-tasks">3 task due today</span> -->
+            </div>
+            <div class="right">
+                <span id="incomplete" onclick="showIncomplete()">Incomplete Task</span>
+                <span id="complete" onclick="showComplete()">Complete Task</span>
+            </div>
+        </div>
+        <div class="list-items" id="place-my-items">
+
+            <div class="item">
+                <div>
+                    <span><input type="checkbox" ></span>
+                    <span>Client meeting @ 2:30pm</span>
+                </div>
+                <i class="material-symbols-outlined del">delete</i>
+            </div>
+        </div>
+        <button  type =' button' onclick="showInput()">Add task</button>
+    </div>
+
+    <form action="" class="input" id="input">
+        <h3>Add Task</h3>
+            <div>
+                <label for="">Title</label>
+                <br>
+                <input type="text" name="" id="in-title">
+               </div>
+               <div>
+                <label for="">Complettion Date</label>
+                <br>
+                <input type="date" name="" id="in-date">
+               </div>
+               <button type="button" id="btnAddTask">Done</button>
+               
+    </form>
+   <script src="./index.js"></script>
+
+</body>
+    
+</body>
+</html>
